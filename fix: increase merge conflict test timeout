@@ -1,1 +1,14 @@
+## Summary
 
+Increase timeout for merge conflict integration test.
+
+## Changes
+
+- Increased timeout for "handles merge conflicts" test
+- Kept existing test logic unchanged
+
+## Verification
+
+pnpm vitest test/integration/merge-conflict.test.js --run --coverage=false
+
+✓ 4 tests passed
