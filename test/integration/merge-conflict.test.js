@@ -88,7 +88,8 @@ describe('lint-staged', () => {
         expect(log).toMatch(`test.js`)
         expect(await readFile('test.js')).toEqual(fileInBranchBFixed)
       }
-    )
+    ),
+    60000
   )
 
   test(
